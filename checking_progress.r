@@ -15,9 +15,9 @@ get_player_name <- function(gender, surname) {
 }
 
 # call the function to get the players full name
-get_player_name(women_players, "Vicker")
+m1 <- get_player_name(men_players, "Copil")
+m2 <- get_player_name(men_players, "Granollers")
 
-get_player_name(men_players, "Nadal")
 
 
 # define a function to return who player 1 is and what the prediction was for them to win
@@ -29,5 +29,14 @@ check_predition <- function(df, one_player, second_player) {
 }
 
 # call the function to get the probability of player 1 winning
-check_predition(mens, "James Duckworth", "Rafael Nadal")
+f1 <- get_player_name(women_players, "")
+f2 <- get_player_name(women_players, "")
+
+check_predition(womens, f1, f2)
+
+
+m1 <- get_player_name(men_players, "Jarry")
+m2 <- get_player_name(men_players, "Mayer")[1]
+
+check_predition(mens, m1, m2)
 
